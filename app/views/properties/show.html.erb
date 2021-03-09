@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
 
+<h1>閲覧</h1>
 <p>
   <strong>物件名:</strong>
   <%= @property.property_name %>
@@ -36,5 +37,5 @@
   <% i += 1 %>
 <% end %>
 
-<%= link_to '編集する', edit_property_path(@property) %> |
-<%= link_to '物件一覧へ', properties_path %>
+<%= link_to '編集', edit_property_path(@property) %> |
+<%= link_to '戻る', properties_path %>
